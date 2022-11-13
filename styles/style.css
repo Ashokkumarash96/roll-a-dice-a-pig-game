@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background-image: url(../assets/vivid-blurred-colorful-wallpaper-background_58702-3798.webp);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  font-size: 16px;
+}
+
+main {
+  position: relative;
+  height: 80%;
+  width: 65%;
+  background-color: rgb(255, 255, 255, 0.35);
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  display: flex;
+  overflow: hidden;
+}
+
+.player {
+  flex: 50%;
+  padding: 7rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+}
+
+.name {
+  /* position: relative; */
+  font-size: 2rem;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  ;
+}
+
+.score {
+  font-size: 6rem;
+  font-weight: 300;
+  color: #152a72;
+  margin-bottom: 4rem;
+}
+
+.player-active {
+  background-image: url(../assets/your-turn-vector-clipart_csp19481404.webp);
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position-x: center;
+}
+
+.player-active .name {
+  font-weight: 900;
+}
+
+.player-active .score {
+  font-weight: 700;
+}
+
+.weight {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.player-active .current {
+  opacity: 1;
+}
+
+.current {
+  background-color: #215892;
+  border-radius: 9px;
+  color: #fff;
+  padding: 0.5rem 4rem;
+  width: 55%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.current-label {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.current-score {
+  font-size: 2rem;
+}
+
+/* absolute positioned elements */
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #444;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 0.7rem 1rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 10rem;
+}
+
+.btn-new {
+  top: 2rem;
+}
+
+.btn-roll {
+  top: 21rem;
+}
+
+.btn-hold {
+  top: 25rem;
+}
+
+.btn:active {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.dice {
+  position: absolute;
+  left: 50%;
+  height: 7rem;
+  top: 10rem;
+  transform: translateX(-40%);
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.player-winner {
+  background-image: url(../assets/winner-word-and-stars-exploding-in-stock-illustrations_csp5868575.webp);
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position-x: center;
+  color: #fff;
+}
+
+.player-winner .name {
+  font-weight: 700;
+  color: #141514;
+}
+
+.player-winner .score {
+  font-weight: 400;
+  color: #080808;
+}
+
+.hidden {
+  display: none;
+}
+
+
+@media (max-width: 468px) {
+  main {
+    height: 80%;
+    width: 90%;
+  }
+
+  .player {
+    /* flex: 50%; */
+    padding: 1x 1px;
+  }
+
+  .name {
+    /* position: relative; */
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  .score {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .player-active .name {
+    font-weight: 700;
+  }
+
+  .player-active .score {
+    font-weight: 700;
+  }
+
+  .current {
+    height: 4rem;
+    padding: 1rem 1rem;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .current-label {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .current-score {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    font-weight: 200;
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+  }
+
+  .btn-new {
+    top: 2.5rem;
+  }
+
+  .btn-roll {
+    top: 25rem;
+  }
+
+
+  .btn-hold {
+    top: 28.2rem;
+  }
+
+  .dice {
+    height: 4rem;
+    top: 13rem;
+  }
+
+  .player-winner .name {
+    font-weight: 300;
+  }
+
+}

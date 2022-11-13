@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Title</title>
+    <!-- Favicon Link -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="player player-0 player-active" id="player-0">
+        <h2 class="name weight" id="name-0">Player 1</h2>
+        <p class="score" id="score-0">23</p>
+        <div class="current">
+          <p class="current-label weight">Current</p>
+          <p class="current-score" id="current-0">12</p>
+        </div>
+      </section>
+      <section class="player player-1" id="player-1">
+        <h2 class="name weight" id="name-1">Player 2</h2>
+        <p class="score" id="score-1">14</p>
+        <div class="current">
+          <p class="current-label weight">Current</p>
+          <p class="current-score" id="current-1">22</p>
+        </div>
+      </section>
+
+      <img
+        src="./assets/dice-1.png"
+        alt="Playing Dice"
+        class="dice"
+        id="dice"
+      />
+
+      <button class="btn btn-new" id="btn-new">🔄 New Game</button>
+      <button class="btn btn-roll" id="btn-roll">🎲 Roll Dice</button>
+      <button class="btn btn-hold" id="btn-hold">📥 Hold</button>
+    </main>
+    <!-- custom script -->
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
